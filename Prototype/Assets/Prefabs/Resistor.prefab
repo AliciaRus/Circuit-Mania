@@ -421,6 +421,7 @@ MonoBehaviour:
   band2Renderer: {fileID: 2119082895992967333}
   band3Renderer: {fileID: 6460813500397787435}
   band4Renderer: {fileID: 8480967463482346062}
+  connectedBulb: {fileID: 0}
   resistance: 1000
   toleranceLabel: 5%
 --- !u!1 &8516692920554243359

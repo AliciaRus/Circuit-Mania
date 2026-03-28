@@ -13,6 +13,7 @@ public class Resistor : MonoBehaviour
     public SpriteRenderer band2Renderer;
     public SpriteRenderer band3Renderer;
     public SpriteRenderer band4Renderer;   // optional tolerance band
+    public LightBulb connectedBulb;
 
     [Header("Calculated")]
 public float resistance;
@@ -75,6 +76,8 @@ public string toleranceLabel;
         toleranceLabel = GetTolerance(band4);
 
         Debug.Log($"Resistance: {FormatResistance(resistance)} ±{toleranceLabel}");
+        if (connectedBulb != null)
+            connectedBulb.SetResistance(resistance);
     }
 
     private string GetTolerance(ResistorColor color)
