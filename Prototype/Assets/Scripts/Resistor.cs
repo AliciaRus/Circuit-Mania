@@ -15,6 +15,7 @@ public class Resistor : MonoBehaviour
     public SpriteRenderer band4Renderer;   // optional tolerance band
     public LightBulb connectedBulb;
 
+
     [Header("Calculated")]
 public float resistance;
 public string toleranceLabel;
@@ -102,4 +103,5 @@ public string toleranceLabel;
         if (ohms >= 1_000)     return $"{ohms / 1_000f:0.##}kΩ";
         return $"{ohms:0.##}Ω";
     }
+    
 }
