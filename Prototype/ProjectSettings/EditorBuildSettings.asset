@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/things.unity
+    guid: d55f610b20c38884f8113834912fc7f0
+  - enabled: 1
     path: Assets/LoseScreen.unity
     guid: 766f2d7b856c1994fa9ba891ec0ad408
   m_configObjects: {}
